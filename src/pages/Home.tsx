@@ -39,14 +39,15 @@ export default function Home() {
           muted 
           loop 
           playsInline 
-          className="absolute w-full h-full object-cover"
+          className="absolute w-full h-full object-cover object-center"
+          style={{ objectFit: 'cover', width: '100vw', height: '100vh' }}
         >
           <source src="/IMG_3098.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
         
-        {/* Dark Overlay for Better Readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        {/* Gradient Overlay for Better Readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
